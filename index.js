@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var http = require('http');
 var express = require('express');
 
@@ -28,5 +30,5 @@ app.get('/app_id', function(req, res){
 })
 
 http.createServer(app).listen(app.get('port'), function() {
- 	console.log('Agora WebRTC Communications Demo starts at ', app.get('port'));
+ 	console.log('ClassTime starts at ', app.get('port'));
 });
